@@ -37,7 +37,6 @@
             width: 100%;
         }
 
-        /* Navbar */
         .navbar {
             background: linear-gradient(135deg, var(--dark-blue-darker) 0%, var(--dark-blue) 100%);
             color: var(--white);
@@ -192,7 +191,6 @@
             border-radius: 4px;
         }
 
-        /* Sidebar */
         .sidebar {
             width: 260px;
             background: var(--white);
@@ -271,14 +269,12 @@
             font-size: 1.1rem;
         }
 
-        /* Main Content */
         .main-content {
             flex: 1;
             margin-left: 260px;
             margin-top: 70px;
             padding: 2rem;
             transition: margin-left 0.3s ease;
-            width: 90%;
         }
 
         .page-header {
@@ -331,7 +327,6 @@
             border: 2px solid var(--gray-border);
         }
 
-        /* Stats Grid */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -395,7 +390,6 @@
             font-weight: 600;
         }
 
-        /* Card */
         .card {
             background: var(--white);
             padding: 2rem;
@@ -422,33 +416,25 @@
             color: var(--dark-blue);
         }
 
-        /* Chart Container */
         .chart-container {
             height: 320px;
             position: relative;
         }
+        
         .chart-grid{
            display: grid; 
            grid-template-columns: 2fr 1fr; 
            gap: 1.5rem; 
            margin-bottom: 2rem;
         }
+        
         .leaderboard-chart{
            display: grid; 
            grid-template-columns: 1fr 1fr; 
            gap: 1.5rem; 
            margin-bottom: 2rem;
         }
-        @media (max-width:998px) {
-            .chart-grid,.leaderboard-chart{
-                display: grid; 
-                grid-template-columns: auto; 
-                gap: 1.5rem; 
-                margin-bottom: 2rem;
-            }
-        }
 
-        /* Section */
         .section {
             display: none;
         }
@@ -457,13 +443,11 @@
             display: block;
         }
 
-        /* Tabs */
         .tabs {
             display: flex;
             gap: 0.5rem;
             margin-bottom: 2rem;
             border-bottom: 2px solid var(--gray-border);
-            /* overflow-x: auto; */
         }
 
         .tab {
@@ -494,7 +478,6 @@
             display: block;
         }
 
-        /* Deal Cards */
         .deals-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -618,7 +601,6 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
-        /* Promotion Cards */
         .promo-card {
             background: white;
             border-radius: 16px;
@@ -630,7 +612,6 @@
         }
 
         .promo-card:hover {
-            /* transform: translateX(8px); */
             box-shadow: 0 8px 24px rgba(0,0,0,0.12);
             border-color: var(--primary-red);
         }
@@ -735,7 +716,6 @@
             color: #dc2626;
         }
 
-        /* Table */
         .table-container {
             overflow-x: auto;
         }
@@ -780,114 +760,6 @@
             background: linear-gradient(90deg, rgba(230, 57, 70, 0.03) 0%, transparent 100%);
         }
 
-        /* Mobile Table Cards */
-        .mobile-table-card {
-            display: none;
-            background: var(--white);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            border: 1px solid var(--gray-border);
-            transition: all 0.3s;
-        }
-
-        .mobile-table-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-        }
-
-        .mobile-card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            margin-bottom: 1rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid var(--gray-light);
-        }
-
-        .mobile-card-id {
-            font-weight: 700;
-            color: var(--primary-red);
-            font-size: 1rem;
-        }
-
-        .mobile-card-name {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--dark-blue);
-            margin-bottom: 0.5rem;
-        }
-
-        .mobile-card-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.75rem 0;
-            border-bottom: 1px solid var(--gray-light);
-        }
-
-        .mobile-card-row:last-child {
-            border-bottom: none;
-        }
-
-        .mobile-card-label {
-            font-size: 0.85rem;
-            color: var(--gray-dark);
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        .mobile-card-value {
-            font-size: 0.95rem;
-            color: var(--dark-blue);
-            font-weight: 600;
-            text-align: right;
-        }
-
-        .mobile-card-actions {
-            display: flex;
-            gap: 0.5rem;
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 2px solid var(--gray-light);
-        }
-
-        .mobile-action-btn {
-            flex: 1;
-            padding: 0.75rem;
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-size: 0.85rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-        }
-
-        .mobile-action-btn.view {
-            background: var(--blue);
-            color: white;
-        }
-
-        .mobile-action-btn.edit {
-            background: var(--green);
-            color: white;
-        }
-
-        .mobile-action-btn.download {
-            background: var(--purple);
-            color: white;
-        }
-
-        .mobile-action-btn:active {
-            transform: scale(0.95);
-        }
-
-        /* Status Badges */
         .status-badge {
             padding: 0.5rem 1rem;
             border-radius: 20px;
@@ -913,7 +785,6 @@
             color: #d97706;
         }
 
-        /* Action Icons */
         .action-icons {
             display: flex;
             gap: 1rem;
@@ -931,7 +802,6 @@
             transform: scale(1.15);
         }
 
-        /* Leaderboard Styles */
         .leaderboard-card {
             background: linear-gradient(135deg, #2b2d42 0%, #1a1b2e 100%);
             color: white;
@@ -1055,7 +925,240 @@
             text-align: center;
         }
 
-        /* Responsive */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            overflow-y: auto;
+            animation: fadeIn 0.3s;
+        }
+
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background: var(--white);
+            border-radius: 16px;
+            width: 100%;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideUp 0.3s;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, var(--dark-blue-darker) 0%, var(--dark-blue) 100%);
+            color: var(--white);
+            padding: 2rem;
+            border-radius: 16px 16px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .modal-close {
+            background: rgba(255,255,255,0.1);
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .modal-close:hover {
+            background: rgba(255,255,255,0.2);
+            transform: rotate(90deg);
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 600;
+            color: var(--dark-blue);
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .form-input,
+        .form-select {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--gray-border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+
+        .form-input:focus,
+        .form-select:focus {
+            outline: none;
+            border-color: var(--primary-red);
+            box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .detail-section {
+            background: var(--gray-light);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--gray-border);
+        }
+
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+
+        .detail-label {
+            font-weight: 600;
+            color: var(--gray-dark);
+        }
+
+        .detail-value {
+            font-weight: 600;
+            color: var(--dark-blue);
+            text-align: right;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary-red);
+            border: 3px solid var(--white);
+            box-shadow: 0 0 0 3px var(--primary-red);
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -1.1rem;
+            top: 12px;
+            width: 2px;
+            height: calc(100% - 12px);
+            background: var(--gray-border);
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .timeline-content {
+            background: var(--white);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--gray-border);
+        }
+
+        .timeline-time {
+            font-size: 0.85rem;
+            color: var(--gray-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-desc {
+            font-size: 0.9rem;
+            color: var(--gray-dark);
+        }
+
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 150;
+        }
+
+        .sidebar-overlay.show {
+            display: block;
+        }
+
         @media (max-width: 1024px) {
             .main-content {
                 margin-left: 0;
@@ -1077,6 +1180,10 @@
             .logout-btn {
                 left: 1rem;
                 width: calc(260px - 2rem);
+            }
+
+            .chart-grid, .leaderboard-chart {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -1166,6 +1273,15 @@
             .chart-container {
                 height: 250px;
             }
+
+            .modal-content {
+                max-width: 100%;
+                margin: 1rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 480px) {
@@ -1202,29 +1318,11 @@
                 padding: 0.75rem 0.5rem;
             }
         }
-
-        /* Overlay for mobile sidebar */
-        .sidebar-overlay {
-            display: none;
-            position: fixed;
-            top: 70px;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.5);
-            z-index: 150;
-        }
-
-        .sidebar-overlay.show {
-            display: block;
-        }
     </style>
 </head>
 <body>
-    <!-- Sidebar Overlay -->
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
 
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-left">
             <button class="menu-btn" onclick="toggleSidebar()">
@@ -1253,7 +1351,6 @@
         </div>
     </nav>
 
-    <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
         <ul class="sidebar-menu">
             <li class="sidebar-item active" onclick="showSection('overview')">
@@ -1267,6 +1364,10 @@
             <li class="sidebar-item" onclick="showSection('drivers')">
                 <i class="fa-solid fa-car"></i>
                 <span>Drivers</span>
+            </li>
+            <li class="sidebar-item" onclick="showSection('trips')">
+                <i class="fa-solid fa-route"></i>
+                <span>Trip Tracking</span>
             </li>
             <li class="sidebar-item" onclick="showSection('deals')">
                 <i class="fa-solid fa-tags"></i>
@@ -1291,9 +1392,7 @@
         </button>
     </aside>
 
-    <!-- Main Content -->
     <main class="main-content">
-        <!-- Overview Section -->
         <div id="overview" class="section active">
             <div class="page-header">
                 <h1 class="page-title">Dashboard Overview</h1>
@@ -1345,7 +1444,6 @@
                 </div>
             </div>
 
-            <!-- Charts -->
             <div class="chart-grid">
                 <div class="card">
                     <div class="card-header">
@@ -1366,7 +1464,6 @@
                 </div>
             </div>
 
-            <!-- Recent Transactions -->
             <div class="card">
                 <div class="card-header">
                     <h2 class="card-title">Recent Transactions</h2>
@@ -1416,37 +1513,109 @@
             </div>
         </div>
 
-        <!-- Customers Section -->
         <div id="customers" class="section">
             <div class="page-header">
                 <h1 class="page-title">Customer Management</h1>
+                <div class="header-actions">
+                    <button class="btn btn-secondary" onclick="filterCustomers('all')">
+                        <i class="fa-solid fa-users"></i> All Customers
+                    </button>
+                    <button class="btn btn-secondary" onclick="filterCustomers('active')">
+                        <i class="fa-solid fa-circle-check"></i> Active
+                    </button>
+                    <button class="btn btn-secondary" onclick="filterCustomers('inactive')">
+                        <i class="fa-solid fa-circle-xmark"></i> Inactive
+                    </button>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-label">Total Customers</div>
+                        <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    </div>
+                    <div class="stat-value">24,567</div>
+                    <div class="stat-change">
+                        <i class="fa-solid fa-arrow-trend-up"></i> 8.2% from last month
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-label">Active Customers</div>
+                        <div class="stat-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    </div>
+                    <div class="stat-value">22,134</div>
+                    <div class="stat-change">
+                        <i class="fa-solid fa-arrow-trend-up"></i> 5.3% from last month
+                    </div>
+                </div>
             </div>
 
             <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Customer List</h2>
+                    <div class="search-bar" style="position: relative;">
+                        <input type="text" placeholder="Search customers..." id="customerSearch" style="background: var(--gray-light); color: var(--dark-blue); width: 300px;">
+                        <i class="fa-solid fa-magnifying-glass" style="color: var(--gray-dark);"></i>
+                    </div>
+                </div>
                 <div class="table-container">
-                    <table>
+                    <table id="customersTable">
                         <thead>
                             <tr>
                                 <th>Customer ID</th>
                                 <th>Name</th>
                                 <th>Email</th>
+                                <th>Phone</th>
                                 <th>Total Rides</th>
                                 <th>Status</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr data-customer-id="CUST-001" data-status="active">
                                 <td>#CUST-001</td>
                                 <td><strong>Sarah Kumar</strong></td>
                                 <td>sarah@example.com</td>
+                                <td>+91 98765 43210</td>
                                 <td>125</td>
                                 <td><span class="status-badge status-active"><i class="fa-solid fa-circle-check"></i> Active</span></td>
                                 <td>
                                     <div class="action-icons">
-                                        <i class="fa-solid fa-eye action-icon" title="View"></i>
-                                        <i class="fa-solid fa-pen-to-square action-icon" title="Edit"></i>
-                                        <i class="fa-solid fa-file-invoice action-icon" onclick="downloadInvoice('CUST-001', 'Sarah Kumar', '450')" title="Invoice"></i>
+                                        <i class="fa-solid fa-eye action-icon" onclick="viewCustomerDetails('CUST-001')" title="View Details"></i>
+                                        <i class="fa-solid fa-history action-icon" onclick="viewCustomerHistory('CUST-001')" title="View History"></i>
+                                        <i class="fa-solid fa-ban action-icon" onclick="toggleCustomerStatus('CUST-001', 'active')" title="Deactivate"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-customer-id="CUST-002" data-status="active">
+                                <td>#CUST-002</td>
+                                <td><strong>Raj Patel</strong></td>
+                                <td>raj@example.com</td>
+                                <td>+91 98765 43211</td>
+                                <td>89</td>
+                                <td><span class="status-badge status-active"><i class="fa-solid fa-circle-check"></i> Active</span></td>
+                                <td>
+                                    <div class="action-icons">
+                                        <i class="fa-solid fa-eye action-icon" onclick="viewCustomerDetails('CUST-002')" title="View Details"></i>
+                                        <i class="fa-solid fa-history action-icon" onclick="viewCustomerHistory('CUST-002')" title="View History"></i>
+                                        <i class="fa-solid fa-ban action-icon" onclick="toggleCustomerStatus('CUST-002', 'active')" title="Deactivate"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-customer-id="CUST-003" data-status="inactive">
+                                <td>#CUST-003</td>
+                                <td><strong>Priya Sharma</strong></td>
+                                <td>priya@example.com</td>
+                                <td>+91 98765 43212</td>
+                                <td>45</td>
+                                <td><span class="status-badge status-pending"><i class="fa-solid fa-circle-xmark"></i> Inactive</span></td>
+                                <td>
+                                    <div class="action-icons">
+                                        <i class="fa-solid fa-eye action-icon" onclick="viewCustomerDetails('CUST-003')" title="View Details"></i>
+                                        <i class="fa-solid fa-history action-icon" onclick="viewCustomerHistory('CUST-003')" title="View History"></i>
+                                        <i class="fa-solid fa-circle-check action-icon" style="color: var(--green);" onclick="toggleCustomerStatus('CUST-003', 'inactive')" title="Activate"></i>
                                     </div>
                                 </td>
                             </tr>
@@ -1456,10 +1625,20 @@
             </div>
         </div>
 
-        <!-- Drivers Section -->
         <div id="drivers" class="section">
             <div class="page-header">
                 <h1 class="page-title">Driver Management</h1>
+                <div class="header-actions">
+                    <button class="btn btn-primary" onclick="showAddDriverForm()">
+                        <i class="fa-solid fa-plus"></i> Add New Driver
+                    </button>
+                    <button class="btn btn-secondary" onclick="filterDrivers('active')">
+                        <i class="fa-solid fa-circle-check"></i> Active
+                    </button>
+                    <button class="btn btn-secondary" onclick="filterDrivers('inactive')">
+                        <i class="fa-solid fa-circle-xmark"></i> Inactive
+                    </button>
+                </div>
             </div>
 
             <div class="tabs">
@@ -1471,15 +1650,23 @@
                 </div>
             </div>
 
-            <!-- All Drivers Tab -->
             <div id="allDriversTab" class="tab-content active">
                 <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Driver List</h2>
+                        <div class="search-bar" style="position: relative;">
+                            <input type="text" placeholder="Search drivers..." id="driverSearch" style="background: var(--gray-light); color: var(--dark-blue); width: 300px;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: var(--gray-dark);"></i>
+                        </div>
+                    </div>
                     <div class="table-container">
-                        <table>
+                        <table id="driversTable">
                             <thead>
                                 <tr>
                                     <th>Driver ID</th>
                                     <th>Name</th>
+                                    <th>Phone</th>
+                                    <th>Vehicle</th>
                                     <th>Total Rides</th>
                                     <th>Rating</th>
                                     <th>Status</th>
@@ -1487,42 +1674,54 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr data-driver-id="DRV-2584" data-status="active">
                                     <td>#DRV-2584</td>
                                     <td><strong>John Driver</strong></td>
+                                    <td>+91 98765 12345</td>
+                                    <td>Honda City - KA01AB1234</td>
                                     <td>1,247</td>
                                     <td>⭐ 4.8</td>
                                     <td><span class="status-badge status-active"><i class="fa-solid fa-circle-check"></i> Active</span></td>
                                     <td>
                                         <div class="action-icons">
-                                            <i class="fa-solid fa-eye action-icon" title="View"></i>
-                                            <i class="fa-solid fa-pen-to-square action-icon" title="Edit"></i>
+                                            <i class="fa-solid fa-eye action-icon" onclick="viewDriverDetails('DRV-2584')" title="View Details"></i>
+                                            <i class="fa-solid fa-history action-icon" onclick="viewDriverHistory('DRV-2584')" title="View History"></i>
+                                            <i class="fa-solid fa-pen-to-square action-icon" onclick="editDriver('DRV-2584')" title="Edit"></i>
+                                            <i class="fa-solid fa-ban action-icon" onclick="toggleDriverStatus('DRV-2584', 'active')" title="Deactivate"></i>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr data-driver-id="DRV-2585" data-status="active">
                                     <td>#DRV-2585</td>
                                     <td><strong>Sarah Johnson</strong></td>
+                                    <td>+91 98765 12346</td>
+                                    <td>Maruti Swift - KA02CD5678</td>
                                     <td>1,156</td>
                                     <td>⭐ 4.9</td>
                                     <td><span class="status-badge status-active"><i class="fa-solid fa-circle-check"></i> Active</span></td>
                                     <td>
                                         <div class="action-icons">
-                                            <i class="fa-solid fa-eye action-icon" title="View"></i>
-                                            <i class="fa-solid fa-pen-to-square action-icon" title="Edit"></i>
+                                            <i class="fa-solid fa-eye action-icon" onclick="viewDriverDetails('DRV-2585')" title="View Details"></i>
+                                            <i class="fa-solid fa-history action-icon" onclick="viewDriverHistory('DRV-2585')" title="View History"></i>
+                                            <i class="fa-solid fa-pen-to-square action-icon" onclick="editDriver('DRV-2585')" title="Edit"></i>
+                                            <i class="fa-solid fa-ban action-icon" onclick="toggleDriverStatus('DRV-2585', 'active')" title="Deactivate"></i>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr data-driver-id="DRV-2586" data-status="inactive">
                                     <td>#DRV-2586</td>
                                     <td><strong>Rajesh Kumar</strong></td>
+                                    <td>+91 98765 12347</td>
+                                    <td>Hyundai Verna - KA03EF9012</td>
                                     <td>1,089</td>
                                     <td>⭐ 4.7</td>
-                                    <td><span class="status-badge status-active"><i class="fa-solid fa-circle-check"></i> Active</span></td>
+                                    <td><span class="status-badge status-pending"><i class="fa-solid fa-circle-xmark"></i> Inactive</span></td>
                                     <td>
                                         <div class="action-icons">
-                                            <i class="fa-solid fa-eye action-icon" title="View"></i>
-                                            <i class="fa-solid fa-pen-to-square action-icon" title="Edit"></i>
+                                            <i class="fa-solid fa-eye action-icon" onclick="viewDriverDetails('DRV-2586')" title="View Details"></i>
+                                            <i class="fa-solid fa-history action-icon" onclick="viewDriverHistory('DRV-2586')" title="View History"></i>
+                                            <i class="fa-solid fa-pen-to-square action-icon" onclick="editDriver('DRV-2586')" title="Edit"></i>
+                                            <i class="fa-solid fa-circle-check action-icon" style="color: var(--green);" onclick="toggleDriverStatus('DRV-2586', 'inactive')" title="Activate"></i>
                                         </div>
                                     </td>
                                 </tr>
@@ -1532,7 +1731,6 @@
                 </div>
             </div>
 
-            <!-- Leaderboard Tab -->
             <div id="leaderboardTab" class="tab-content">
                 <div class="leaderboard-card">
                     <div class="leaderboard-header">
@@ -1540,37 +1738,12 @@
                         <p>Top performers based on total trips completed this month</p>
                     </div>
 
-                    <!-- Top 3 -->
                     <div class="leaderboard-item">
                         <div class="leaderboard-rank gold">1</div>
                         <div class="medal-icon">🥇</div>
                         <div class="leaderboard-avatar" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);">JD</div>
                         <div class="leaderboard-info">
                             <div class="leaderboard-name">John Driver</div>
-                            <div class="leaderboard-stats">
-                                <div class="leaderboard-stat">
-                                    <i class="fa-solid fa-route"></i>
-                                    <span>1,247 trips</span>
-                                </div>
-                                <div class="leaderboard-stat">
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>4.8 rating</span>
-                                </div>
-                                <div class="leaderboard-stat">
-                                    <i class="fa-solid fa-indian-rupee-sign"></i>
-                                    <span>₹3.8L earned</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="leaderboard-badge">1,247</div>
-                    </div>
-
-                    <div class="leaderboard-item">
-                        <div class="leaderboard-rank silver">2</div>
-                        <div class="medal-icon">🥈</div>
-                        <div class="leaderboard-avatar" style="background: linear-gradient(135deg, #C0C0C0 0%, #808080 100%);">SJ</div>
-                        <div class="leaderboard-info">
-                            <div class="leaderboard-name">Sarah Johnson</div>
                             <div class="leaderboard-stats">
                                 <div class="leaderboard-stat">
                                     <i class="fa-solid fa-route"></i>
@@ -1660,7 +1833,6 @@
                     </div>
                 </div>
 
-                <!-- Leaderboard Charts -->
                 <div class="leaderboard-chart">
                     <div class="card">
                         <div class="card-header">
@@ -1683,7 +1855,164 @@
             </div>
         </div>
 
-        <!-- Deals Section -->
+        <div id="trips" class="section">
+            <div class="page-header">
+                <h1 class="page-title">Trip Tracking & Management</h1>
+                <div class="header-actions">
+                    <button class="btn btn-secondary" onclick="filterTrips('all')">
+                        <i class="fa-solid fa-list"></i> All Trips
+                    </button>
+                    <button class="btn btn-secondary" onclick="filterTrips('ongoing')">
+                        <i class="fa-solid fa-spinner"></i> Ongoing
+                    </button>
+                    <button class="btn btn-secondary" onclick="filterTrips('completed')">
+                        <i class="fa-solid fa-circle-check"></i> Completed
+                    </button>
+                    <button class="btn btn-secondary" onclick="filterTrips('cancelled')">
+                        <i class="fa-solid fa-circle-xmark"></i> Cancelled
+                    </button>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-label">Total Trips</div>
+                        <div class="stat-icon"><i class="fa-solid fa-route"></i></div>
+                    </div>
+                    <div class="stat-value">89,450</div>
+                    <div class="stat-change">
+                        <i class="fa-solid fa-arrow-trend-up"></i> 15.3% from last month
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-label">Ongoing Trips</div>
+                        <div class="stat-icon"><i class="fa-solid fa-car-side"></i></div>
+                    </div>
+                    <div class="stat-value">247</div>
+                    <div class="stat-change">
+                        <i class="fa-solid fa-spinner"></i> Live tracking active
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-label">Completed Today</div>
+                        <div class="stat-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    </div>
+                    <div class="stat-value">1,523</div>
+                    <div class="stat-change">
+                        <i class="fa-solid fa-arrow-trend-up"></i> 8.5% from yesterday
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-label">Avg Trip Duration</div>
+                        <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+                    </div>
+                    <div class="stat-value">28 min</div>
+                    <div class="stat-change">
+                        <i class="fa-solid fa-arrow-trend-down"></i> 2 min faster
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">All Trips</h2>
+                    <div class="search-bar" style="position: relative;">
+                        <input type="text" placeholder="Search by trip ID, customer, or driver..." id="tripSearch" style="background: var(--gray-light); color: var(--dark-blue); width: 350px;">
+                        <i class="fa-solid fa-magnifying-glass" style="color: var(--gray-dark);"></i>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table id="tripsTable">
+                        <thead>
+                            <tr>
+                                <th>Trip ID</th>
+                                <th>Customer</th>
+                                <th>Driver</th>
+                                <th>From → To</th>
+                                <th>Distance</th>
+                                <th>Fare</th>
+                                <th>Date & Time</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-trip-id="TRP-1001" data-status="completed">
+                                <td><strong>#TRP-1001</strong></td>
+                                <td>Sarah Kumar</td>
+                                <td>John Driver</td>
+                                <td>
+                                    <div style="font-size: 0.85rem;">
+                                        <div><i class="fa-solid fa-location-dot" style="color: var(--green);"></i> MG Road, Bangalore</div>
+                                        <div style="margin-top: 5px;"><i class="fa-solid fa-location-dot" style="color: var(--primary-red);"></i> Indiranagar, Bangalore</div>
+                                    </div>
+                                </td>
+                                <td>12.5 km</td>
+                                <td><strong>₹450</strong></td>
+                                <td>Nov 14, 2025<br/>10:30 AM</td>
+                                <td><span class="status-badge status-completed"><i class="fa-solid fa-circle-check"></i> Completed</span></td>
+                                <td>
+                                    <div class="action-icons">
+                                        <i class="fa-solid fa-eye action-icon" onclick="viewTripDetails('TRP-1001')" title="View Details"></i>
+                                        <i class="fa-solid fa-map-location-dot action-icon" onclick="trackTrip('TRP-1001')" title="View Route"></i>
+                                        <i class="fa-solid fa-download action-icon" onclick="downloadInvoice('TRP-1001', 'Sarah Kumar', '450')" title="Download Invoice"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-trip-id="TRP-1002" data-status="ongoing">
+                                <td><strong>#TRP-1002</strong></td>
+                                <td>Raj Patel</td>
+                                <td>Sarah Johnson</td>
+                                <td>
+                                    <div style="font-size: 0.85rem;">
+                                        <div><i class="fa-solid fa-location-dot" style="color: var(--green);"></i> Koramangala, Bangalore</div>
+                                        <div style="margin-top: 5px;"><i class="fa-solid fa-location-dot" style="color: var(--primary-red);"></i> Electronic City, Bangalore</div>
+                                    </div>
+                                </td>
+                                <td>18.2 km</td>
+                                <td><strong>₹620</strong></td>
+                                <td>Nov 14, 2025<br/>11:45 AM</td>
+                                <td><span class="status-badge status-pending"><i class="fa-solid fa-spinner fa-spin"></i> Ongoing</span></td>
+                                <td>
+                                    <div class="action-icons">
+                                        <i class="fa-solid fa-eye action-icon" onclick="viewTripDetails('TRP-1002')" title="View Details"></i>
+                                        <i class="fa-solid fa-map-location-dot action-icon" style="color: var(--green);" onclick="trackTrip('TRP-1002')" title="Track Live"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-trip-id="TRP-1003" data-status="cancelled">
+                                <td><strong>#TRP-1003</strong></td>
+                                <td>Priya Sharma</td>
+                                <td>Mike Wilson</td>
+                                <td>
+                                    <div style="font-size: 0.85rem;">
+                                        <div><i class="fa-solid fa-location-dot" style="color: var(--green);"></i> HSR Layout, Bangalore</div>
+                                        <div style="margin-top: 5px;"><i class="fa-solid fa-location-dot" style="color: var(--primary-red);"></i> Whitefield, Bangalore</div>
+                                    </div>
+                                </td>
+                                <td>22.0 km</td>
+                                <td><strong>₹780</strong></td>
+                                <td>Nov 14, 2025<br/>09:15 AM</td>
+                                <td><span class="status-badge" style="background: #fee2e2; color: #dc2626;"><i class="fa-solid fa-circle-xmark"></i> Cancelled</span></td>
+                                <td>
+                                    <div class="action-icons">
+                                        <i class="fa-solid fa-eye action-icon" onclick="viewTripDetails('TRP-1003')" title="View Details"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
         <div id="deals" class="section">
             <div class="page-header">
                 <h1 class="page-title">Deals Management</h1>
@@ -1730,7 +2059,6 @@
             </div>
 
             <div class="deals-grid">
-                <!-- Deal Card 1 -->
                 <div class="deal-card">
                     <div class="deal-header">
                         <div class="deal-badge">🔥 HOT DEAL</div>
@@ -1765,81 +2093,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Deal Card 2 -->
-                <div class="deal-card">
-                    <div class="deal-header" style="background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);">
-                        <div class="deal-badge">⚡ FLASH SALE</div>
-                        <div class="deal-title">Weekend Special</div>
-                        <div class="deal-subtitle">Saturday & Sunday only</div>
-                    </div>
-                    <div class="deal-body">
-                        <div class="deal-discount">30% OFF</div>
-                        <div class="deal-details">
-                            <div class="deal-detail">
-                                <i class="fa-solid fa-calendar"></i>
-                                <span>Valid till: Nov 30, 2025</span>
-                            </div>
-                            <div class="deal-detail">
-                                <i class="fa-solid fa-users"></i>
-                                <span>Used: 2,845 times</span>
-                            </div>
-                            <div class="deal-detail">
-                                <i class="fa-solid fa-indian-rupee-sign"></i>
-                                <span>Max discount: ₹150</span>
-                            </div>
-                        </div>
-                        <div class="deal-footer">
-                            <div class="deal-actions">
-                                <button class="action-btn edit" onclick="alert('Edit Deal')">
-                                    <i class="fa-solid fa-pen"></i> Edit
-                                </button>
-                                <button class="action-btn delete" onclick="if(confirm('Delete this deal?')) alert('Deal deleted')">
-                                    <i class="fa-solid fa-trash"></i> Delete
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Deal Card 3 -->
-                <div class="deal-card">
-                    <div class="deal-header" style="background: linear-gradient(135deg, #10b981 0%, #34d399 100%);">
-                        <div class="deal-badge">💚 ECO RIDE</div>
-                        <div class="deal-title">Green Ride Bonus</div>
-                        <div class="deal-subtitle">Electric vehicles only</div>
-                    </div>
-                    <div class="deal-body">
-                        <div class="deal-discount">20% OFF</div>
-                        <div class="deal-details">
-                            <div class="deal-detail">
-                                <i class="fa-solid fa-calendar"></i>
-                                <span>Valid till: Dec 15, 2025</span>
-                            </div>
-                            <div class="deal-detail">
-                                <i class="fa-solid fa-users"></i>
-                                <span>Used: 856 times</span>
-                            </div>
-                            <div class="deal-detail">
-                                <i class="fa-solid fa-indian-rupee-sign"></i>
-                                <span>Max discount: ₹100</span>
-                            </div>
-                        </div>
-                        <div class="deal-footer">
-                            <div class="deal-actions">
-                                <button class="action-btn edit" onclick="alert('Edit Deal')">
-                                    <i class="fa-solid fa-pen"></i> Edit
-                                </button>
-                                <button class="action-btn delete" onclick="if(confirm('Delete this deal?')) alert('Deal deleted')">
-                                    <i class="fa-solid fa-trash"></i> Delete
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <!-- Promotions Section -->
         <div id="promotions" class="section">
             <div class="page-header">
                 <h1 class="page-title">Promotions Management</h1>
@@ -1857,230 +2113,10 @@
                         <div class="stat-icon"><i class="fa-solid fa-bullhorn"></i></div>
                     </div>
                     <div class="stat-value">8</div>
-                    <div class="stat-change" style="color: red;">
-                        <i class="fa-solid fa-arrow-trend-down"></i> 3 from last month
-                    </div>
                 </div>
-
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div class="stat-label">Promo Code Uses</div>
-                        <div class="stat-icon"><i class="fa-solid fa-qrcode"></i></div>
-                    </div>
-                    <div class="stat-value">15,842</div>
-                    <div class="stat-change">
-                        <i class="fa-solid fa-arrow-trend-up"></i> 25.3% from last month
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div class="stat-label">Discount Given</div>
-                        <div class="stat-icon"><i class="fa-solid fa-percent"></i></div>
-                    </div>
-                    <div class="stat-value">₹1.2M</div>
-                    <div class="stat-change">
-                        <i class="fa-solid fa-arrow-trend-up"></i> 14.8% from last month
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div class="stat-label">Conversion Rate</div>
-                        <div class="stat-icon"><i class="fa-solid fa-chart-pie"></i></div>
-                    </div>
-                    <div class="stat-value">68%</div>
-                    <div class="stat-change">
-                        <i class="fa-solid fa-arrow-trend-up"></i> 5.2% from last month
-                    </div>
-                </div>
-            </div>
-
-            <div class="deals-grid">
-                <!-- Promo Card 1 -->
-            <div class="promo-card">
-                <div class="promo-banner">
-                    <div class="promo-banner-text">CYBER MONDAY<br/>MEGA SALE!</div>
-                </div>
-                <div class="promo-content">
-                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
-                        <div>
-                            <div class="promo-title">Cyber Monday Exclusive - 60% Off All Rides</div>
-                            <span class="promo-status active"><i class="fa-solid fa-circle-check"></i> Active</span>
-                        </div>
-                    </div>
-                    <div class="promo-description">
-                        Get massive savings on all your rides this Cyber Monday! Book now and save up to 60% on premium rides. Limited time offer - don't miss out on this amazing deal. Valid for all users, new and existing.
-                    </div>
-                    <div class="promo-meta">
-                        <div class="promo-meta-item">
-                            <i class="fa-solid fa-calendar-days"></i>
-                            <span><strong>Duration:</strong> Nov 13 - Nov 20, 2025</span>
-                        </div>
-                        <div class="promo-meta-item">
-                            <i class="fa-solid fa-users"></i>
-                            <span><strong>Used:</strong> 4,856 times</span>
-                        </div>
-                        <div class="promo-meta-item">
-                            <i class="fa-solid fa-indian-rupee-sign"></i>
-                            <span><strong>Budget:</strong> ₹500,000</span>
-                        </div>
-                    </div>
-                    <div class="promo-code">CYBER60</div>
-                    <div class="deal-footer">
-                        <div class="deal-actions">
-                            <button class="action-btn edit" onclick="alert('Edit Promotion')">
-                                <i class="fa-solid fa-pen"></i> Edit
-                            </button>
-                            <button class="action-btn" style="background: var(--orange); color: white;" onclick="alert('Pause Promotion')">
-                                <i class="fa-solid fa-pause"></i> Pause
-                            </button>
-                            <button class="action-btn delete" onclick="if(confirm('Delete this promotion?')) alert('Promotion deleted')">
-                                <i class="fa-solid fa-trash"></i> Delete
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Promo Card 2 -->
-            <div class="promo-card">
-                <div class="promo-banner" style="background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);">
-                    <div class="promo-banner-text">REFER & EARN<br/>₹500 EACH!</div>
-                </div>
-                <div class="promo-content">
-                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
-                        <div>
-                            <div class="promo-title">Referral Program - Double Rewards</div>
-                            <span class="promo-status active"><i class="fa-solid fa-circle-check"></i> Active</span>
-                        </div>
-                    </div>
-                    <div class="promo-description">
-                        Invite your friends and family to Rydmate! Both you and your friend get ₹500 credit when they complete their first ride. No limits on referrals - the more you share, the more you earn!
-                    </div>
-                    <div class="promo-meta">
-                        <div class="promo-meta-item">
-                            <i class="fa-solid fa-calendar-days"></i>
-                            <span><strong>Duration:</strong> Nov 1 - Dec 31, 2025</span>
-                        </div>
-                        <div class="promo-meta-item">
-                            <i class="fa-solid fa-users"></i>
-                            <span><strong>Referrals:</strong> 2,347 successful</span>
-                        </div>
-                        <div class="promo-meta-item">
-                            <i class="fa-solid fa-indian-rupee-sign"></i>
-                            <span><strong>Budget:</strong> ₹1,000,000</span>
-                        </div>
-                    </div>
-                    <div class="promo-code">REFER500</div>
-                    <div class="deal-footer">
-                        <div class="deal-actions">
-                            <button class="action-btn edit" onclick="alert('Edit Promotion')">
-                                <i class="fa-solid fa-pen"></i> Edit
-                            </button>
-                            <button class="action-btn" style="background: var(--orange); color: white;" onclick="alert('Pause Promotion')">
-                                <i class="fa-solid fa-pause"></i> Pause
-                            </button>
-                            <button class="action-btn delete" onclick="if(confirm('Delete this promotion?')) alert('Promotion deleted')">
-                                <i class="fa-solid fa-trash"></i> Delete
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Promo Card 3 -->
-            <div class="promo-card">
-                <div class="promo-banner" style="background: linear-gradient(135deg, #10b981 0%, #34d399 100%);">
-                    <div class="promo-banner-text">STUDENT<br/>DISCOUNT!</div>
-                </div>
-                <div class="promo-content">
-                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
-                        <div>
-                            <div class="promo-title">Student Special - 25% Off Every Ride</div>
-                            <span class="promo-status scheduled"><i class="fa-solid fa-clock"></i> Scheduled</span>
-                        </div>
-                    </div>
-                    <div class="promo-description">
-                        Exclusive offer for students! Show your valid student ID and get 25% off on every ride. Perfect for getting to class, study groups, or weekend adventures. Valid at all times.
-                    </div>
-                    <div class="promo-meta">
-                        <div class="promo-meta-item">
-                            <i class="fa-solid fa-calendar-days"></i>
-                            <span><strong>Start Date:</strong> Nov 25, 2025</span>
-                        </div>
-                        <div class="promo-meta-item">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <span><strong>Target:</strong> College Students</span>
-                        </div>
-                        <div class="promo-meta-item">
-                            <i class="fa-solid fa-indian-rupee-sign"></i>
-                            <span><strong>Budget:</strong> ₹750,000</span>
-                        </div>
-                    </div>
-                    <div class="promo-code">STUDENT25</div>
-                    <div class="deal-footer">
-                        <div class="deal-actions">
-                            <button class="action-btn edit" onclick="alert('Edit Promotion')">
-                                <i class="fa-solid fa-pen"></i> Edit
-                            </button>
-                            <button class="action-btn" style="background: var(--green); color: white;" onclick="alert('Activate Now')">
-                                <i class="fa-solid fa-play"></i> Activate
-                            </button>
-                            <button class="action-btn delete" onclick="if(confirm('Delete this promotion?')) alert('Promotion deleted')">
-                                <i class="fa-solid fa-trash"></i> Delete
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Promo Card 4 -->
-            <div class="promo-card">
-                <div class="promo-banner" style="background: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%);">
-                    <div class="promo-banner-text">EXPIRED<br/>PROMO</div>
-                </div>
-                <div class="promo-content">
-                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
-                        <div>
-                            <div class="promo-title">Diwali Dhamaka - 50% Off</div>
-                            <span class="promo-status expired"><i class="fa-solid fa-circle-xmark"></i> Expired</span>
-                        </div>
-                    </div>
-                    <div class="promo-description">
-                        This promotion has ended. It was a festive celebration offer that provided 50% discount on all rides during Diwali festival. Great success with over 8,000 redemptions!
-                    </div>
-                    <div class="promo-meta">
-                        <div class="promo-meta-item">
-                            <i class="fa-solid fa-calendar-days"></i>
-                            <span><strong>Duration:</strong> Oct 20 - Nov 5, 2025</span>
-                        </div>
-                        <div class="promo-meta-item">
-                            <i class="fa-solid fa-users"></i>
-                            <span><strong>Used:</strong> 8,254 times</span>
-                        </div>
-                        <div class="promo-meta-item">
-                            <i class="fa-solid fa-check-circle"></i>
-                            <span><strong>Status:</strong> Completed Successfully</span>
-                        </div>
-                    </div>
-                    <div class="promo-code" style="border-color: #9ca3af; color: #6b7280;">DIWALI50</div>
-                    <div class="deal-footer">
-                        <div class="deal-actions">
-                            <button class="action-btn" style="background: var(--blue); color: white;" onclick="alert('View Analytics')">
-                                <i class="fa-solid fa-chart-bar"></i> View Analytics
-                            </button>
-                            <button class="action-btn delete" onclick="if(confirm('Archive this promotion?')) alert('Promotion archived')">
-                                <i class="fa-solid fa-archive"></i> Archive
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
         </div>
 
-        <!-- Salary Section -->
         <div id="salary" class="section">
             <div class="page-header">
                 <h1 class="page-title">Salary Management</h1>
@@ -2104,7 +2140,6 @@
                 </div>
             </div>
 
-            <!-- Charts -->
             <div class="chart-grid">
                 <div class="card">
                     <div class="card-header">
@@ -2124,46 +2159,8 @@
                     </div>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Driver Payroll</h2>
-                </div>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Driver ID</th>
-                                <th>Name</th>
-                                <th>Base Salary</th>
-                                <th>Incentives</th>
-                                <th>Net Salary</th>
-                                <th>Status</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>#DRV-2584</td>
-                                <td><strong>John Driver</strong></td>
-                                <td>₹25,000</td>
-                                <td style="color: var(--green);">+₹12,500</td>
-                                <td><strong>₹36,250</strong></td>
-                                <td><span class="status-badge status-completed"><i class="fa-solid fa-circle-check"></i> Paid</span></td>
-                                <td>
-                                    <div class="action-icons">
-                                        <i class="fa-solid fa-file-invoice action-icon" title="View Payslip"></i>
-                                        <i class="fa-solid fa-download action-icon" onclick="downloadPayslip('DRV-2584', 'John Driver', 25000, 12500, 36250)" title="Download"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
         </div>
 
-        <!-- Revenue Section -->
         <div id="revenue" class="section">
             <div class="page-header">
                 <h1 class="page-title">Revenue Analytics</h1>
@@ -2190,16 +2187,115 @@
         </div>
     </main>
 
+    <div id="addDriverModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title"><i class="fa-solid fa-user-plus"></i> Add New Driver</h2>
+                <button class="modal-close" onclick="closeModal('addDriverModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="addDriverForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">First Name *</label>
+                            <input type="text" class="form-input" required placeholder="Enter first name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Last Name *</label>
+                            <input type="text" class="form-input" required placeholder="Enter last name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-input" required placeholder="+91 98765 43210">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input" placeholder="driver@example.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">License Number *</label>
+                            <input type="text" class="form-input" required placeholder="KA-01-2023-0012345">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">License Expiry *</label>
+                            <input type="date" class="form-input" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Vehicle Model *</label>
+                            <input type="text" class="form-input" required placeholder="Honda City">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Vehicle Number *</label>
+                            <input type="text" class="form-input" required placeholder="KA01AB1234">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Vehicle Type *</label>
+                            <select class="form-select" required>
+                                <option value="">Select vehicle type</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="suv">SUV</option>
+                                <option value="hatchback">Hatchback</option>
+                                <option value="luxury">Luxury</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Base Salary (₹) *</label>
+                            <input type="number" class="form-input" required placeholder="25000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Address</label>
+                        <input type="text" class="form-input" placeholder="Enter complete address">
+                    </div>
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <button type="submit" class="btn btn-primary" style="flex: 1;">
+                            <i class="fa-solid fa-check"></i> Add Driver
+                        </button>
+                        <button type="button" class="btn btn-secondary" onclick="closeModal('addDriverModal')" style="flex: 1;">
+                            <i class="fa-solid fa-xmark"></i> Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="detailsModalTitle"><i class="fa-solid fa-circle-info"></i> Details</h2>
+                <button class="modal-close" onclick="closeModal('detailsModal')">&times;</button>
+            </div>
+            <div class="modal-body" id="detailsModalBody"></div>
+        </div>
+    </div>
+
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="historyModalTitle"><i class="fa-solid fa-clock-rotate-left"></i> Trip History</h2>
+                <button class="modal-close" onclick="closeModal('historyModal')">&times;</button>
+            </div>
+            <div class="modal-body" id="historyModalBody"></div>
+        </div>
+    </div>
+
     <script>
         let charts = {};
 
-        // Initialize Charts
         window.addEventListener('DOMContentLoaded', function() {
             initCharts();
         });
 
         function initCharts() {
-            // Revenue Chart
             const revenueCtx = document.getElementById('revenueChart');
             if (revenueCtx) {
                 charts.revenue = new Chart(revenueCtx.getContext('2d'), {
@@ -2223,7 +2319,6 @@
                 });
             }
 
-            // Pie Chart
             const pieCtx = document.getElementById('pieChart');
             if (pieCtx) {
                 charts.pie = new Chart(pieCtx.getContext('2d'), {
@@ -2242,7 +2337,6 @@
                 });
             }
 
-            // Salary Chart
             const salaryCtx = document.getElementById('salaryChart');
             if (salaryCtx) {
                 charts.salary = new Chart(salaryCtx.getContext('2d'), {
@@ -2266,7 +2360,6 @@
                 });
             }
 
-            // Salary Pie
             const salaryPieCtx = document.getElementById('salaryPieChart');
             if (salaryPieCtx) {
                 charts.salaryPie = new Chart(salaryPieCtx.getContext('2d'), {
@@ -2285,7 +2378,6 @@
                 });
             }
 
-            // Revenue Detail Chart
             const revenueDetailCtx = document.getElementById('revenueDetailChart');
             if (revenueDetailCtx) {
                 charts.revenueDetail = new Chart(revenueDetailCtx.getContext('2d'), {
@@ -2307,15 +2399,12 @@
             }
         }
 
-        // Switch Driver Tab
         function switchDriverTab(tabName) {
-            // Update tab active state
             document.querySelectorAll('#drivers .tab').forEach(tab => {
                 tab.classList.remove('active');
             });
             event.target.closest('.tab').classList.add('active');
             
-            // Show/hide tab content
             document.getElementById('allDriversTab').classList.remove('active');
             document.getElementById('leaderboardTab').classList.remove('active');
             
@@ -2323,14 +2412,12 @@
                 document.getElementById('allDriversTab').classList.add('active');
             } else if (tabName === 'leaderboard') {
                 document.getElementById('leaderboardTab').classList.add('active');
-                // Initialize leaderboard charts
                 setTimeout(() => {
                     initLeaderboardCharts();
                 }, 100);
             }
         }
 
-        // Initialize Leaderboard Charts
         function initLeaderboardCharts() {
             const leaderboardCtx = document.getElementById('leaderboardChart');
             if (leaderboardCtx && !charts.leaderboard) {
@@ -2340,7 +2427,7 @@
                         labels: ['John Driver', 'Sarah Johnson', 'Rajesh Kumar', 'Mike Wilson', 'David Lee'],
                         datasets: [{
                             label: 'Total Trips',
-                            data: [1247, 1156, 1089, 892, 654],
+                            data: [1247, 1156, 1089, 892,654],
                             backgroundColor: [
                                 'rgba(255, 215, 0, 0.8)',
                                 'rgba(192, 192, 192, 0.8)',
@@ -2377,12 +2464,10 @@
             }
         }
 
-        // Toggle Notifications
         function toggleNotifications() {
             alert('Notifications panel - 8 new notifications');
         }
 
-        // Logout
         function logout() {
             if (confirm('Are you sure you want to logout?')) {
                 alert('Logging out...');
@@ -2392,7 +2477,6 @@
             }
         }
 
-        // Toggle Sidebar
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
             const overlay = document.getElementById('sidebarOverlay');
@@ -2400,27 +2484,20 @@
             overlay.classList.toggle('show');
         }
 
-        // Show Section
         function showSection(sectionId) {
-            // Hide all sections
             document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            
-            // Show selected section
             document.getElementById(sectionId).classList.add('active');
             
-            // Update sidebar
             document.querySelectorAll('.sidebar-item').forEach(item => {
                 item.classList.remove('active');
             });
             event.target.closest('.sidebar-item').classList.add('active');
             
-            // Close sidebar on mobile
             if (window.innerWidth <= 1024) {
                 document.getElementById('sidebar').classList.remove('open');
                 document.getElementById('sidebarOverlay').classList.remove('show');
             }
 
-            // Re-initialize charts when section becomes visible
             setTimeout(() => {
                 Object.values(charts).forEach(chart => {
                     if (chart) chart.resize();
@@ -2428,7 +2505,6 @@
             }, 100);
         }
 
-        // Download Invoice
         function downloadInvoice(id, customer, amount) {
             const html = `<!DOCTYPE html>
 <html>
@@ -2540,109 +2616,529 @@
             alert('Invoice downloaded successfully!');
         }
 
-        // Download Payslip
-        function downloadPayslip(id, name, base, incentives, net) {
-            const html = `<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Payslip ${id}</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; padding: 40px; background: #f5f5f5; }
-        .payslip { background: white; padding: 40px; max-width: 800px; margin: 0 auto; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        .header { text-align: center; margin-bottom: 40px; border-bottom: 4px solid #e63946; padding-bottom: 25px; }
-        .company-name { font-size: 38px; font-weight: bold; color: #e63946; margin-bottom: 10px; }
-        .payslip-title { font-size: 24px; color: #2b2d42; margin: 20px 0; font-weight: bold; }
-        .period-badge { display: inline-block; padding: 10px 25px; background: #e63946; color: white; border-radius: 25px; font-weight: bold; margin: 10px 0; }
-        .employee-info { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; background: #f8f9fa; padding: 25px; border-radius: 8px; }
-        .info-row { margin: 8px 0; }
-        .info-label { font-weight: bold; color: #666; font-size: 13px; }
-        .info-value { color: #2b2d42; font-size: 15px; font-weight: 600; margin-top: 3px; }
-        .section-title { background: #2b2d42; color: white; padding: 12px 20px; font-size: 16px; font-weight: bold; margin: 20px 0 15px 0; }
-        .item-row { display: flex; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #e0e0e0; }
-        .item-label { color: #333; font-weight: 500; }
-        .item-value { font-weight: bold; color: #2b2d42; }
-        .total-row { display: flex; justify-content: space-between; padding: 20px; background: #10b981; color: white; font-size: 20px; font-weight: bold; margin-top: 20px; border-radius: 8px; }
-        .footer { margin-top: 50px; padding-top: 30px; border-top: 2px solid #e0e0e0; text-align: center; color: #666; font-size: 13px; line-height: 2; }
-    </style>
-</head>
-<body>
-    <div class="payslip">
-        <div class="header">
-            <div class="company-name">RYDMATE</div>
-            <div class="payslip-title">SALARY SLIP</div>
-            <div class="period-badge">NOVEMBER 2025</div>
-        </div>
-        <div class="employee-info">
-            <div>
-                <div class="info-row">
-                    <div class="info-label">Employee ID</div>
-                    <div class="info-value">${id}</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-label">Employee Name</div>
-                    <div class="info-value">${name}</div>
-                </div>
-            </div>
-            <div>
-                <div class="info-row">
-                    <div class="info-label">Designation</div>
-                    <div class="info-value">Driver</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-label">Payment Date</div>
-                    <div class="info-value">${new Date().toLocaleDateString('en-IN')}</div>
-                </div>
-            </div>
-        </div>
-        <div class="section-title">💰 EARNINGS</div>
-        <div class="item-row">
-            <div class="item-label">Base Salary</div>
-            <div class="item-value">₹${base.toLocaleString('en-IN')}</div>
-        </div>
-        <div class="item-row">
-            <div class="item-label">Performance Incentives</div>
-            <div class="item-value" style="color: #10b981;">+ ₹${incentives.toLocaleString('en-IN')}</div>
-        </div>
-        <div class="item-row">
-            <div class="item-label"><strong>Gross Earnings</strong></div>
-            <div class="item-value"><strong>₹${(base + incentives).toLocaleString('en-IN')}</strong></div>
-        </div>
-        <div class="section-title">📉 DEDUCTIONS</div>
-        <div class="item-row">
-            <div class="item-label">Tax & Others</div>
-            <div class="item-value" style="color: #e63946;">- ₹${((base + incentives - net)).toLocaleString('en-IN')}</div>
-        </div>
-        <div class="total-row">
-            <div>NET SALARY (Take Home)</div>
-            <div>₹${net.toLocaleString('en-IN')}</div>
-        </div>
-        <div class="footer">
-            <strong>This is a computer-generated payslip.</strong><br>
-            For queries, contact HR at hr@rydmate.com
-        </div>
-    </div>
-</body>
-</html>`;
-            
-            const blob = new Blob([html], { type: 'text/html' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `Payslip_${id}_Nov2025.html`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-            
-            alert('Payslip downloaded successfully!');
-        }
-
-        // Responsive chart handling
         window.addEventListener('resize', function() {
             Object.values(charts).forEach(chart => {
                 if (chart) chart.resize();
+            });
+        });
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('show');
+        }
+
+        function showModal(modalId) {
+            document.getElementById(modalId).classList.add('show');
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('show');
+            }
+        }
+
+        function showAddDriverForm() {
+            showModal('addDriverModal');
+        }
+
+        document.getElementById('addDriverForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Driver added successfully! Driver ID: #DRV-' + Math.floor(Math.random() * 10000));
+            closeModal('addDriverModal');
+            this.reset();
+        });
+
+        function toggleDriverStatus(driverId, currentStatus) {
+            const newStatus = currentStatus === 'active' ? 'inactive' : 'active';
+            const action = newStatus === 'active' ? 'activate' : 'deactivate';
+            
+            if (confirm(`Are you sure you want to ${action} driver ${driverId}?`)) {
+                const row = document.querySelector(`tr[data-driver-id="${driverId}"]`);
+                if (row) {
+                    row.setAttribute('data-status', newStatus);
+                    const statusCell = row.querySelector('td:nth-child(7)');
+                    if (newStatus === 'active') {
+                        statusCell.innerHTML = '<span class="status-badge status-active"><i class="fa-solid fa-circle-check"></i> Active</span>';
+                    } else {
+                        statusCell.innerHTML = '<span class="status-badge status-pending"><i class="fa-solid fa-circle-xmark"></i> Inactive</span>';
+                    }
+                    
+                    const actionCell = row.querySelector('td:last-child .action-icons');
+                    const lastIcon = actionCell.querySelector('i:last-child');
+                    if (newStatus === 'active') {
+                        lastIcon.className = 'fa-solid fa-ban action-icon';
+                        lastIcon.title = 'Deactivate';
+                        lastIcon.onclick = function() { toggleDriverStatus(driverId, 'active'); };
+                    } else {
+                        lastIcon.className = 'fa-solid fa-circle-check action-icon';
+                        lastIcon.style.color = 'var(--green)';
+                        lastIcon.title = 'Activate';
+                        lastIcon.onclick = function() { toggleDriverStatus(driverId, 'inactive'); };
+                    }
+                }
+                alert(`Driver ${driverId} has been ${action}d successfully!`);
+            }
+        }
+
+        function toggleCustomerStatus(customerId, currentStatus) {
+            const newStatus = currentStatus === 'active' ? 'inactive' : 'active';
+            const action = newStatus === 'active' ? 'activate' : 'deactivate';
+            
+            if (confirm(`Are you sure you want to ${action} customer ${customerId}?`)) {
+                const row = document.querySelector(`tr[data-customer-id="${customerId}"]`);
+                if (row) {
+                    row.setAttribute('data-status', newStatus);
+                    const statusCell = row.querySelector('td:nth-child(6)');
+                    if (newStatus === 'active') {
+                        statusCell.innerHTML = '<span class="status-badge status-active"><i class="fa-solid fa-circle-check"></i> Active</span>';
+                    } else {
+                        statusCell.innerHTML = '<span class="status-badge status-pending"><i class="fa-solid fa-circle-xmark"></i> Inactive</span>';
+                    }
+                    
+                    const actionCell = row.querySelector('td:last-child .action-icons');
+                    const lastIcon = actionCell.querySelector('i:last-child');
+                    if (newStatus === 'active') {
+                        lastIcon.className = 'fa-solid fa-ban action-icon';
+                        lastIcon.title = 'Deactivate';
+                        lastIcon.onclick = function() { toggleCustomerStatus(customerId, 'active'); };
+                        lastIcon.style.color = '';
+                    } else {
+                        lastIcon.className = 'fa-solid fa-circle-check action-icon';
+                        lastIcon.style.color = 'var(--green)';
+                        lastIcon.title = 'Activate';
+                        lastIcon.onclick = function() { toggleCustomerStatus(customerId, 'inactive'); };
+                    }
+                }
+                alert(`Customer ${customerId} has been ${action}d successfully!`);
+            }
+        }
+
+        function viewDriverDetails(driverId) {
+            const mockData = {
+                'DRV-2584': { name: 'John Driver', phone: '+91 98765 12345', email: 'john.driver@example.com', license: 'KA-01-2023-0012345', vehicle: 'Honda City', vehicleNumber: 'KA01AB1234', rating: '4.8', totalTrips: '1,247', totalEarnings: '₹3,80,000', joinDate: 'Jan 15, 2024' },
+                'DRV-2585': { name: 'Sarah Johnson', phone: '+91 98765 12346', email: 'sarah.johnson@example.com', license: 'KA-02-2023-0012346', vehicle: 'Maruti Swift', vehicleNumber: 'KA02CD5678', rating: '4.9', totalTrips: '1,156', totalEarnings: '₹3,50,000', joinDate: 'Feb 20, 2024' },
+                'DRV-2586': { name: 'Rajesh Kumar', phone: '+91 98765 12347', email: 'rajesh.kumar@example.com', license: 'KA-03-2023-0012347', vehicle: 'Hyundai Verna', vehicleNumber: 'KA03EF9012', rating: '4.7', totalTrips: '1,089', totalEarnings: '₹3,30,000', joinDate: 'Mar 10, 2024' }
+            };
+
+            const data = mockData[driverId] || mockData['DRV-2584'];
+            
+            document.getElementById('detailsModalTitle').innerHTML = `<i class="fa-solid fa-car"></i> Driver Details - ${driverId}`;
+            document.getElementById('detailsModalBody').innerHTML = `
+                <div class="detail-section">
+                    <div class="detail-section-title"><i class="fa-solid fa-user"></i> Personal Information</div>
+                    <div class="detail-row"><span class="detail-label">Full Name</span><span class="detail-value">${data.name}</span></div>
+                    <div class="detail-row"><span class="detail-label">Phone Number</span><span class="detail-value">${data.phone}</span></div>
+                    <div class="detail-row"><span class="detail-label">Email</span><span class="detail-value">${data.email}</span></div>
+                    <div class="detail-row"><span class="detail-label">License Number</span><span class="detail-value">${data.license}</span></div>
+                </div>
+                <div class="detail-section">
+                    <div class="detail-section-title"><i class="fa-solid fa-car-side"></i> Vehicle Information</div>
+                    <div class="detail-row"><span class="detail-label">Vehicle Model</span><span class="detail-value">${data.vehicle}</span></div>
+                    <div class="detail-row"><span class="detail-label">Vehicle Number</span><span class="detail-value">${data.vehicleNumber}</span></div>
+                </div>
+                <div class="detail-section">
+                    <div class="detail-section-title"><i class="fa-solid fa-chart-line"></i> Performance Metrics</div>
+                    <div class="detail-row"><span class="detail-label">Rating</span><span class="detail-value">⭐ ${data.rating}</span></div>
+                    <div class="detail-row"><span class="detail-label">Total Trips</span><span class="detail-value">${data.totalTrips}</span></div>
+                    <div class="detail-row"><span class="detail-label">Total Earnings</span><span class="detail-value" style="color: var(--green);">${data.totalEarnings}</span></div>
+                    <div class="detail-row"><span class="detail-label">Join Date</span><span class="detail-value">${data.joinDate}</span></div>
+                </div>
+            `;
+            showModal('detailsModal');
+        }
+
+        function viewCustomerDetails(customerId) {
+            const mockData = {
+                'CUST-001': { name: 'Sarah Kumar', phone: '+91 98765 43210', email: 'sarah@example.com', totalRides: '125', totalSpent: '₹45,600', avgRating: '4.9', joinDate: 'Mar 10, 2024', favoriteRoute: 'MG Road → Indiranagar' },
+                'CUST-002': { name: 'Raj Patel', phone: '+91 98765 43211', email: 'raj@example.com', totalRides: '89', totalSpent: '₹32,400', avgRating: '4.8', joinDate: 'Apr 15, 2024', favoriteRoute: 'Koramangala → Electronic City' },
+                'CUST-003': { name: 'Priya Sharma', phone: '+91 98765 43212', email: 'priya@example.com', totalRides: '45', totalSpent: '₹18,900', avgRating: '4.7', joinDate: 'May 20, 2024', favoriteRoute: 'HSR Layout → Whitefield' }
+            };
+
+            const data = mockData[customerId] || mockData['CUST-001'];
+            
+            document.getElementById('detailsModalTitle').innerHTML = `<i class="fa-solid fa-user"></i> Customer Details - ${customerId}`;
+            document.getElementById('detailsModalBody').innerHTML = `
+                <div class="detail-section">
+                    <div class="detail-section-title"><i class="fa-solid fa-user"></i> Personal Information</div>
+                    <div class="detail-row"><span class="detail-label">Full Name</span><span class="detail-value">${data.name}</span></div>
+                    <div class="detail-row"><span class="detail-label">Phone Number</span><span class="detail-value">${data.phone}</span></div>
+                    <div class="detail-row"><span class="detail-label">Email</span><span class="detail-value">${data.email}</span></div>
+                    <div class="detail-row"><span class="detail-label">Join Date</span><span class="detail-value">${data.joinDate}</span></div>
+                </div>
+                <div class="detail-section">
+                    <div class="detail-section-title"><i class="fa-solid fa-chart-bar"></i> Activity Statistics</div>
+                    <div class="detail-row"><span class="detail-label">Total Rides</span><span class="detail-value">${data.totalRides}</span></div>
+                    <div class="detail-row"><span class="detail-label">Total Spent</span><span class="detail-value" style="color: var(--green);">${data.totalSpent}</span></div>
+                    <div class="detail-row"><span class="detail-label">Average Rating Given</span><span class="detail-value">⭐ ${data.avgRating}</span></div>
+                    <div class="detail-row"><span class="detail-label">Favorite Route</span><span class="detail-value">${data.favoriteRoute}</span></div>
+                </div>
+            `;
+            showModal('detailsModal');
+        }
+
+        function viewDriverHistory(driverId) {
+            const mockDriverTrips = {
+                'DRV-2584': [
+                    { tripId: 'TRP-1001', customer: 'Sarah Kumar', customerId: 'CUST-001', from: 'MG Road, Bangalore', to: 'Indiranagar, Bangalore', distance: '12.5 km', duration: '28 min', fare: '₹450', dateTime: 'Nov 14, 2025 - 10:30 AM', status: 'completed', rating: '5.0', paymentMethod: 'UPI' },
+                    { tripId: 'TRP-0998', customer: 'Amit Verma', customerId: 'CUST-045', from: 'Koramangala, Bangalore', to: 'Whitefield, Bangalore', distance: '18.2 km', duration: '42 min', fare: '₹620', dateTime: 'Nov 13, 2025 - 03:45 PM', status: 'completed', rating: '4.8', paymentMethod: 'Cash' },
+                    { tripId: 'TRP-0995', customer: 'Priya Sharma', customerId: 'CUST-003', from: 'HSR Layout, Bangalore', to: 'Electronic City, Bangalore', distance: '15.8 km', duration: '35 min', fare: '₹540', dateTime: 'Nov 13, 2025 - 11:20 AM', status: 'completed', rating: '4.9', paymentMethod: 'UPI' },
+                    { tripId: 'TRP-0987', customer: 'Raj Patel', customerId: 'CUST-002', from: 'Brigade Road, Bangalore', to: 'Marathahalli, Bangalore', distance: '14.3 km', duration: '32 min', fare: '₹495', dateTime: 'Nov 12, 2025 - 06:15 PM', status: 'completed', rating: '5.0', paymentMethod: 'UPI' },
+                    { tripId: 'TRP-0980', customer: 'Neha Singh', customerId: 'CUST-078', from: 'Jayanagar, Bangalore', to: 'Bellandur, Bangalore', distance: '19.5 km', duration: '45 min', fare: '₹680', dateTime: 'Nov 12, 2025 - 09:30 AM', status: 'completed', rating: '4.7', paymentMethod: 'Card' },
+                    { tripId: 'TRP-0972', customer: 'Vikram Reddy', customerId: 'CUST-092', from: 'Malleshwaram, Bangalore', to: 'Sarjapur Road, Bangalore', distance: '22.1 km', duration: '52 min', fare: '₹750', dateTime: 'Nov 11, 2025 - 02:15 PM', status: 'completed', rating: '4.9', paymentMethod: 'UPI' },
+                    { tripId: 'TRP-0965', customer: 'Anita Desai', customerId: 'CUST-056', from: 'Richmond Road, Bangalore', to: 'Yelahanka, Bangalore', distance: '25.7 km', duration: '58 min', fare: '₹850', dateTime: 'Nov 11, 2025 - 08:45 AM', status: 'completed', rating: '5.0', paymentMethod: 'UPI' },
+                    { tripId: 'TRP-0958', customer: 'Karthik Kumar', customerId: 'CUST-034', from: 'JP Nagar, Bangalore', to: 'Hebbal, Bangalore', distance: '21.4 km', duration: '48 min', fare: '₹720', dateTime: 'Nov 10, 2025 - 05:30 PM', status: 'cancelled', rating: 'N/A', paymentMethod: 'N/A' },
+                ],
+                'DRV-2585': [
+                    { tripId: 'TRP-1002', customer: 'Raj Patel', customerId: 'CUST-002', from: 'Koramangala, Bangalore', to: 'Electronic City, Bangalore', distance: '18.2 km', duration: '42 min', fare: '₹620', dateTime: 'Nov 14, 2025 - 11:45 AM', status: 'ongoing', rating: 'N/A', paymentMethod: 'UPI' },
+                    { tripId: 'TRP-0997', customer: 'Meera Iyer', customerId: 'CUST-067', from: 'Banashankari, Bangalore', to: 'Manyata Tech Park, Bangalore', distance: '24.6 km', duration: '55 min', fare: '₹820', dateTime: 'Nov 13, 2025 - 07:20 PM', status: 'completed', rating: '5.0', paymentMethod: 'UPI' },
+                ]
+            };
+
+            const trips = mockDriverTrips[driverId] || mockDriverTrips['DRV-2584'];
+            const driverName = driverId === 'DRV-2584' ? 'John Driver' : driverId === 'DRV-2585' ? 'Sarah Johnson' : 'Rajesh Kumar';
+            
+            const totalTrips = trips.length;
+            const completedTrips = trips.filter(t => t.status === 'completed').length;
+            const totalEarnings = trips.filter(t => t.status === 'completed').reduce((sum, t) => sum + parseFloat(t.fare.replace('₹', '').replace(',', '')), 0);
+            const avgRating = (trips.filter(t => t.rating !== 'N/A').reduce((sum, t) => sum + parseFloat(t.rating), 0) / trips.filter(t => t.rating !== 'N/A').length).toFixed(1);
+            
+            document.getElementById('historyModalTitle').innerHTML = `<i class="fa-solid fa-clock-rotate-left"></i> Trip History - ${driverName} (${driverId})`;
+            
+            let timelineHTML = `
+                <div class="detail-section" style="margin-bottom: 2rem;">
+                    <div class="detail-section-title"><i class="fa-solid fa-chart-bar"></i> Trip Statistics</div>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                        <div style="background: linear-gradient(135deg, #e63946 0%, #ff6b6b 100%); color: white; padding: 1.5rem; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 800;">${totalTrips}</div>
+                            <div style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">Total Trips</div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #10b981 0%, #34d399 100%); color: white; padding: 1.5rem; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 800;">${completedTrips}</div>
+                            <div style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">Completed</div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%); color: white; padding: 1.5rem; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 800;">₹${totalEarnings.toLocaleString()}</div>
+                            <div style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">Total Earnings</div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%); color: white; padding: 1.5rem; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 800;">⭐ ${avgRating}</div>
+                            <div style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">Avg Rating</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <button class="btn btn-secondary" onclick="filterModalTrips('all')" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                        <i class="fa-solid fa-list"></i> All (${totalTrips})
+                    </button>
+                    <button class="btn btn-secondary" onclick="filterModalTrips('completed')" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                        <i class="fa-solid fa-circle-check"></i> Completed (${completedTrips})
+                    </button>
+                    <button class="btn btn-secondary" onclick="filterModalTrips('ongoing')" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                        <i class="fa-solid fa-spinner"></i> Ongoing (${trips.filter(t => t.status === 'ongoing').length})
+                    </button>
+                    <button class="btn btn-secondary" onclick="filterModalTrips('cancelled')" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                        <i class="fa-solid fa-circle-xmark"></i> Cancelled (${trips.filter(t => t.status === 'cancelled').length})
+                    </button>
+                </div>
+                <div class="timeline">
+            `;
+            
+            trips.forEach(trip => {
+                const statusBadge = trip.status === 'completed' 
+                    ? '<span class="status-badge status-completed"><i class="fa-solid fa-circle-check"></i> Completed</span>'
+                    : trip.status === 'ongoing'
+                    ? '<span class="status-badge status-pending"><i class="fa-solid fa-spinner fa-spin"></i> Ongoing</span>'
+                    : '<span class="status-badge" style="background: #fee2e2; color: #dc2626;"><i class="fa-solid fa-circle-xmark"></i> Cancelled</span>';
+                
+                timelineHTML += `
+                    <div class="timeline-item" data-trip-status="${trip.status}">
+                        <div class="timeline-content">
+                            <div class="timeline-time"><i class="fa-solid fa-clock"></i> ${trip.dateTime}</div>
+                            <div class="timeline-title" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                                <span>Trip ID: ${trip.tripId}</span>
+                                ${statusBadge}
+                            </div>
+                            <div class="timeline-desc">
+                                <div style="display: grid; gap: 0.5rem; margin-top: 0.75rem;">
+                                    <div><strong><i class="fa-solid fa-user" style="color: var(--primary-red); width: 20px;"></i> Customer:</strong> ${trip.customer} (${trip.customerId})</div>
+                                    <div><strong><i class="fa-solid fa-location-dot" style="color: var(--green); width: 20px;"></i> From:</strong> ${trip.from}</div>
+                                    <div><strong><i class="fa-solid fa-location-dot" style="color: var(--primary-red); width: 20px;"></i> To:</strong> ${trip.to}</div>
+                                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                                        <span><strong><i class="fa-solid fa-road" style="color: var(--blue); width: 20px;"></i></strong> ${trip.distance}</span>
+                                        <span><strong><i class="fa-solid fa-clock" style="color: var(--orange); width: 20px;"></i></strong> ${trip.duration}</span>
+                                        <span><strong><i class="fa-solid fa-indian-rupee-sign" style="color: var(--green); width: 20px;"></i></strong> ${trip.fare}</span>
+                                        ${trip.rating !== 'N/A' ? `<span><strong><i class="fa-solid fa-star" style="color: #f59e0b; width: 20px;"></i></strong> ${trip.rating}</span>` : ''}
+                                    </div>
+                                    ${trip.paymentMethod !== 'N/A' ? `<div style="margin-top: 0.5rem;"><strong><i class="fa-solid fa-credit-card" style="color: var(--purple); width: 20px;"></i> Payment:</strong> ${trip.paymentMethod}</div>` : ''}
+                                </div>
+                                <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                                    <button class="btn btn-secondary" onclick="viewTripDetails('${trip.tripId}')" style="font-size: 0.8rem; padding: 0.4rem 0.8rem;">
+                                        <i class="fa-solid fa-eye"></i> View Details
+                                    </button>
+                                    ${trip.status === 'completed' ? `
+                                        <button class="btn btn-secondary" onclick="downloadInvoice('${trip.tripId}', '${trip.customer}', '${trip.fare.replace('₹', '')}')" style="font-size: 0.8rem; padding: 0.4rem 0.8rem;">
+                                            <i class="fa-solid fa-download"></i> Invoice
+                                        </button>
+                                    ` : ''}
+                                    ${trip.status === 'ongoing' ? `
+                                        <button class="btn btn-secondary" onclick="trackTrip('${trip.tripId}')" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; background: var(--green); color: white;">
+                                            <i class="fa-solid fa-map-location-dot"></i> Track Live
+                                        </button>
+                                    ` : ''}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            timelineHTML += '</div>';
+            
+            document.getElementById('historyModalBody').innerHTML = timelineHTML;
+            showModal('historyModal');
+        }
+
+        function viewCustomerHistory(customerId) {
+            const mockCustomerTrips = {
+                'CUST-001': [
+                    { tripId: 'TRP-1001', driver: 'John Driver', driverId: 'DRV-2584', from: 'MG Road, Bangalore', to: 'Indiranagar, Bangalore', distance: '12.5 km', duration: '28 min', fare: '₹450', dateTime: 'Nov 14, 2025 - 10:30 AM', status: 'completed', rating: '5.0', driverRating: '4.8', paymentMethod: 'UPI', vehicleType: 'Sedan' },
+                    { tripId: 'TRP-0989', driver: 'Sarah Johnson', driverId: 'DRV-2585', from: 'Indiranagar, Bangalore', to: 'Koramangala, Bangalore', distance: '8.3 km', duration: '22 min', fare: '₹320', dateTime: 'Nov 13, 2025 - 05:30 PM', status: 'completed', rating: '4.9', driverRating: '4.9', paymentMethod: 'UPI', vehicleType: 'Hatchback' },
+                    { tripId: 'TRP-0975', driver: 'Rajesh Kumar', driverId: 'DRV-2586', from: 'MG Road, Bangalore', to: 'Whitefield, Bangalore', distance: '16.7 km', duration: '38 min', fare: '₹580', dateTime: 'Nov 12, 2025 - 09:15 AM', status: 'completed', rating: '4.8', driverRating: '4.7', paymentMethod: 'Cash', vehicleType: 'Sedan' },
+                    { tripId: 'TRP-0962', driver: 'Mike Wilson', driverId: 'DRV-2587', from: 'Brigade Road, Bangalore', to: 'Electronic City, Bangalore', distance: '20.4 km', duration: '48 min', fare: '₹710', dateTime: 'Nov 11, 2025 - 02:45 PM', status: 'completed', rating: '5.0', driverRating: '4.6', paymentMethod: 'UPI', vehicleType: 'SUV' },
+                    { tripId: 'TRP-0948', driver: 'David Lee', driverId: 'DRV-2588', from: 'Jayanagar, Bangalore', to: 'Marathahalli, Bangalore', distance: '14.2 km', duration: '32 min', fare: '₹490', dateTime: 'Nov 10, 2025 - 11:20 AM', status: 'completed', rating: '4.7', driverRating: '4.9', paymentMethod: 'Card', vehicleType: 'Sedan' },
+                    { tripId: 'TRP-0935', driver: 'John Driver', driverId: 'DRV-2584', from: 'HSR Layout, Bangalore', to: 'Bellandur, Bangalore', distance: '6.8 km', duration: '18 min', fare: '₹260', dateTime: 'Nov 9, 2025 - 07:50 PM', status: 'completed', rating: '5.0', driverRating: '4.8', paymentMethod: 'UPI', vehicleType: 'Sedan' },
+                    { tripId: 'TRP-0921', driver: 'Sarah Johnson', driverId: 'DRV-2585', from: 'MG Road, Bangalore', to: 'Sarjapur Road, Bangalore', distance: '18.9 km', duration: '42 min', fare: '₹650', dateTime: 'Nov 8, 2025 - 04:30 PM', status: 'cancelled', rating: 'N/A', driverRating: '4.9', paymentMethod: 'N/A', vehicleType: 'Hatchback' },
+                ],
+                'CUST-002': [
+                    { tripId: 'TRP-1002', driver: 'Sarah Johnson', driverId: 'DRV-2585', from: 'Koramangala, Bangalore', to: 'Electronic City, Bangalore', distance: '18.2 km', duration: '42 min', fare: '₹620', dateTime: 'Nov 14, 2025 - 11:45 AM', status: 'ongoing', rating: 'N/A', driverRating: '4.9', paymentMethod: 'UPI', vehicleType: 'Hatchback' },
+                    { tripId: 'TRP-0987', driver: 'John Driver', driverId: 'DRV-2584', from: 'Brigade Road, Bangalore', to: 'Marathahalli, Bangalore', distance: '14.3 km', duration: '32 min', fare: '₹495', dateTime: 'Nov 12, 2025 - 06:15 PM', status: 'completed', rating: '5.0', driverRating: '4.8', paymentMethod: 'UPI', vehicleType: 'Sedan' },
+                ],
+                'CUST-003': [
+                    { tripId: 'TRP-1003', driver: 'Mike Wilson', driverId: 'DRV-2587', from: 'HSR Layout, Bangalore', to: 'Whitefield, Bangalore', distance: '22.0 km', duration: '52 min', fare: '₹780', dateTime: 'Nov 14, 2025 - 09:15 AM', status: 'cancelled', rating: 'N/A', driverRating: '4.6', paymentMethod: 'N/A', vehicleType: 'SUV' },
+                    { tripId: 'TRP-0995', driver: 'John Driver', driverId: 'DRV-2584', from: 'HSR Layout, Bangalore', to: 'Electronic City, Bangalore', distance: '15.8 km', duration: '35 min', fare: '₹540', dateTime: 'Nov 13, 2025 - 11:20 AM', status: 'completed', rating: '4.9', driverRating: '4.8', paymentMethod: 'UPI', vehicleType: 'Sedan' },
+                ]
+            };
+
+            const trips = mockCustomerTrips[customerId] || mockCustomerTrips['CUST-001'];
+            const customerName = customerId === 'CUST-001' ? 'Sarah Kumar' : customerId === 'CUST-002' ? 'Raj Patel' : 'Priya Sharma';
+            
+            const totalTrips = trips.length;
+            const completedTrips = trips.filter(t => t.status === 'completed').length;
+            const totalSpent = trips.filter(t => t.status === 'completed').reduce((sum, t) => sum + parseFloat(t.fare.replace('₹', '').replace(',', '')), 0);
+            const avgRating = (trips.filter(t => t.rating !== 'N/A').reduce((sum, t) => sum + parseFloat(t.rating), 0) / trips.filter(t => t.rating !== 'N/A').length).toFixed(1);
+            
+            document.getElementById('historyModalTitle').innerHTML = `<i class="fa-solid fa-clock-rotate-left"></i> Trip History - ${customerName} (${customerId})`;
+            
+            let timelineHTML = `
+                <div class="detail-section" style="margin-bottom: 2rem;">
+                    <div class="detail-section-title"><i class="fa-solid fa-chart-bar"></i> Trip Statistics</div>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                        <div style="background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%); color: white; padding: 1.5rem; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 800;">${totalTrips}</div>
+                            <div style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">Total Trips</div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #10b981 0%, #34d399 100%); color: white; padding: 1.5rem; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 800;">${completedTrips}</div>
+                            <div style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">Completed</div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #e63946 0%, #ff6b6b 100%); color: white; padding: 1.5rem; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 800;">₹${totalSpent.toLocaleString()}</div>
+                            <div style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">Total Spent</div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%); color: white; padding: 1.5rem; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 2rem; font-weight: 800;">⭐ ${avgRating}</div>
+                            <div style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">Avg Rating Given</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <button class="btn btn-secondary" onclick="filterModalTrips('all')" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                        <i class="fa-solid fa-list"></i> All (${totalTrips})
+                    </button>
+                    <button class="btn btn-secondary" onclick="filterModalTrips('completed')" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                        <i class="fa-solid fa-circle-check"></i> Completed (${completedTrips})
+                    </button>
+                    <button class="btn btn-secondary" onclick="filterModalTrips('ongoing')" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                        <i class="fa-solid fa-spinner"></i> Ongoing (${trips.filter(t => t.status === 'ongoing').length})
+                    </button>
+                    <button class="btn btn-secondary" onclick="filterModalTrips('cancelled')" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                        <i class="fa-solid fa-circle-xmark"></i> Cancelled (${trips.filter(t => t.status === 'cancelled').length})
+                    </button>
+                </div>
+                <div class="timeline">
+            `;
+            
+            trips.forEach(trip => {
+                const statusBadge = trip.status === 'completed' 
+                    ? '<span class="status-badge status-completed"><i class="fa-solid fa-circle-check"></i> Completed</span>'
+                    : trip.status === 'ongoing'
+                    ? '<span class="status-badge status-pending"><i class="fa-solid fa-spinner fa-spin"></i> Ongoing</span>'
+                    : '<span class="status-badge" style="background: #fee2e2; color: #dc2626;"><i class="fa-solid fa-circle-xmark"></i> Cancelled</span>';
+                
+                timelineHTML += `
+                    <div class="timeline-item" data-trip-status="${trip.status}">
+                        <div class="timeline-content">
+                            <div class="timeline-time"><i class="fa-solid fa-clock"></i> ${trip.dateTime}</div>
+                            <div class="timeline-title" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                                <span>Trip ID: ${trip.tripId}</span>
+                                ${statusBadge}
+                            </div>
+                            <div class="timeline-desc">
+                                <div style="display: grid; gap: 0.5rem; margin-top: 0.75rem;">
+                                    <div><strong><i class="fa-solid fa-car" style="color: var(--primary-red); width: 20px;"></i> Driver:</strong> ${trip.driver} (${trip.driverId}) - ⭐ ${trip.driverRating}</div>
+                                    <div><strong><i class="fa-solid fa-car-side" style="color: var(--blue); width: 20px;"></i> Vehicle:</strong> ${trip.vehicleType}</div>
+                                    <div><strong><i class="fa-solid fa-location-dot" style="color: var(--green); width: 20px;"></i> From:</strong> ${trip.from}</div>
+                                    <div><strong><i class="fa-solid fa-location-dot" style="color: var(--primary-red); width: 20px;"></i> To:</strong> ${trip.to}</div>
+                                    <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                                        <span><strong><i class="fa-solid fa-road" style="color: var(--blue); width: 20px;"></i></strong> ${trip.distance}</span>
+                                        <span><strong><i class="fa-solid fa-clock" style="color: var(--orange); width: 20px;"></i></strong> ${trip.duration}</span>
+                                        <span><strong><i class="fa-solid fa-indian-rupee-sign" style="color: var(--green); width: 20px;"></i></strong> ${trip.fare}</span>
+                                        ${trip.rating !== 'N/A' ? `<span><strong><i class="fa-solid fa-star" style="color: #f59e0b; width: 20px;"></i></strong> You rated: ${trip.rating}</span>` : ''}
+                                    </div>
+                                    ${trip.paymentMethod !== 'N/A' ? `<div style="margin-top: 0.5rem;"><strong><i class="fa-solid fa-credit-card" style="color: var(--purple); width: 20px;"></i> Payment:</strong> ${trip.paymentMethod}</div>` : ''}
+                                </div>
+                                <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                                    <button class="btn btn-secondary" onclick="viewTripDetails('${trip.tripId}')" style="font-size: 0.8rem; padding: 0.4rem 0.8rem;">
+                                        <i class="fa-solid fa-eye"></i> View Details
+                                    </button>
+                                    ${trip.status === 'completed' ? `
+                                        <button class="btn btn-secondary" onclick="downloadInvoice('${trip.tripId}', '${customerName}', '${trip.fare.replace('₹', '')}')" style="font-size: 0.8rem; padding: 0.4rem 0.8rem;">
+                                            <i class="fa-solid fa-download"></i> Invoice
+                                        </button>
+                                    ` : ''}
+                                    ${trip.status === 'ongoing' ? `
+                                        <button class="btn btn-secondary" onclick="trackTrip('${trip.tripId}')" style="font-size: 0.8rem; padding: 0.4rem 0.8rem; background: var(--green); color: white;">
+                                            <i class="fa-solid fa-map-location-dot"></i> Track Live
+                                        </button>
+                                    ` : ''}
+                                    <button class="btn btn-secondary" onclick="viewDriverDetails('${trip.driverId}')" style="font-size: 0.8rem; padding: 0.4rem 0.8rem;">
+                                        <i class="fa-solid fa-id-card"></i> Driver Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            timelineHTML += '</div>';
+            
+            document.getElementById('historyModalBody').innerHTML = timelineHTML;
+            showModal('historyModal');
+        }
+
+        function viewTripDetails(tripId) {
+            const mockData = {
+                'TRP-1001': { customer: 'Sarah Kumar', driver: 'John Driver', from: 'MG Road, Bangalore', to: 'Indiranagar, Bangalore', distance: '12.5 km', duration: '28 minutes', fare: '₹450', paymentMethod: 'UPI', dateTime: 'Nov 14, 2025 - 10:30 AM', status: 'Completed', rating: '5.0' }
+            };
+
+            const data = mockData[tripId] || mockData['TRP-1001'];
+            
+            document.getElementById('detailsModalTitle').innerHTML = `<i class="fa-solid fa-route"></i> Trip Details - ${tripId}`;
+            document.getElementById('detailsModalBody').innerHTML = `
+                <div class="detail-section">
+                    <div class="detail-section-title"><i class="fa-solid fa-users"></i> Participants</div>
+                    <div class="detail-row"><span class="detail-label">Customer</span><span class="detail-value">${data.customer}</span></div>
+                    <div class="detail-row"><span class="detail-label">Driver</span><span class="detail-value">${data.driver}</span></div>
+                </div>
+                <div class="detail-section">
+                    <div class="detail-section-title"><i class="fa-solid fa-map-location-dot"></i> Route Information</div>
+                    <div class="detail-row"><span class="detail-label">Pickup Location</span><span class="detail-value">${data.from}</span></div>
+                    <div class="detail-row"><span class="detail-label">Drop Location</span><span class="detail-value">${data.to}</span></div>
+                    <div class="detail-row"><span class="detail-label">Distance</span><span class="detail-value">${data.distance}</span></div>
+                    <div class="detail-row"><span class="detail-label">Duration</span><span class="detail-value">${data.duration}</span></div>
+                </div>
+                <div class="detail-section">
+                    <div class="detail-section-title"><i class="fa-solid fa-indian-rupee-sign"></i> Payment Details</div>
+                    <div class="detail-row"><span class="detail-label">Total Fare</span><span class="detail-value" style="color: var(--green); font-size: 1.2rem;">${data.fare}</span></div>
+                    <div class="detail-row"><span class="detail-label">Payment Method</span><span class="detail-value">${data.paymentMethod}</span></div>
+                    <div class="detail-row"><span class="detail-label">Date & Time</span><span class="detail-value">${data.dateTime}</span></div>
+                    <div class="detail-row"><span class="detail-label">Status</span><span class="detail-value"><span class="status-badge status-completed">✓ ${data.status}</span></span></div>
+                    <div class="detail-row"><span class="detail-label">Customer Rating</span><span class="detail-value">⭐ ${data.rating}</span></div>
+                </div>
+            `;
+            showModal('detailsModal');
+        }
+
+        function trackTrip(tripId) {
+            alert(`Opening live tracking for trip ${tripId}...\n\nThis would show a real-time map with the driver's current location and route.`);
+        }
+
+        function editDriver(driverId) {
+            alert(`Opening edit form for driver ${driverId}...`);
+        }
+
+        function filterDrivers(status) {
+            const rows = document.querySelectorAll('#driversTable tbody tr');
+            rows.forEach(row => {
+                const rowStatus = row.getAttribute('data-status');
+                if (status === 'all' || rowStatus === status) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        function filterCustomers(status) {
+            const rows = document.querySelectorAll('#customersTable tbody tr');
+            rows.forEach(row => {
+                const rowStatus = row.getAttribute('data-status');
+                if (status === 'all' || rowStatus === status) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        function filterTrips(status) {
+            const rows = document.querySelectorAll('#tripsTable tbody tr');
+            rows.forEach(row => {
+                const rowStatus = row.getAttribute('data-status');
+                if (status === 'all' || rowStatus === status) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        function filterModalTrips(status) {
+            const items = document.querySelectorAll('.timeline-item');
+            items.forEach(item => {
+                const itemStatus = item.getAttribute('data-trip-status');
+                if (status === 'all' || itemStatus === status) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        document.getElementById('driverSearch').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const rows = document.querySelectorAll('#driversTable tbody tr');
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(searchTerm) ? '' : 'none';
+            });
+        });
+
+        document.getElementById('customerSearch').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const rows = document.querySelectorAll('#customersTable tbody tr');
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(searchTerm) ? '' : 'none';
+            });
+        });
+
+        document.getElementById('tripSearch').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const rows = document.querySelectorAll('#tripsTable tbody tr');
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(searchTerm) ? '' : 'none';
             });
         });
     </script>
